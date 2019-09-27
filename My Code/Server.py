@@ -74,6 +74,12 @@ def cookie_generator():  # function to generate a new cookie
             break
     return random_cookie
 
+def peerlistupdate():
+    f = open("Peer_List.txt","w+")
+    f.write = ("\n Hostname \t Cookie \t Active_State \t TTL \t Port No. \t Active times \t Most Recent registration time \n")
+    f.close()
+
+
 # Function to create a list of peers and map it with IP address and used port number
 # def create_peer_list(mapped_peer_list, address, port_no):
 #    peer_list = [address, str(port_no)]
